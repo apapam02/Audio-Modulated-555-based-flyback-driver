@@ -101,7 +101,18 @@ Captured at 50 µs/div while playing [tone / song].
 
 
 
+### MOSFET drain voltage
+Probed at the 2SK2611 drain (10× probe, 20 V/div). Each time the MOSFET turns off,
+the collapsing field in the primary produces a sharp flyback spike of about **80 V**,
+followed by decaying ringing as the primary inductance resonates with stray
+capacitance. The flat low section is the MOSFET's on-time, when the primary is
+charging. The ringing varies from cycle to cycle, likely due to the arc loading the
+secondary differently each time.
 
+The ~80 V peak sits far below the 2SK2611's 900 V rating, leaving a large safety
+margin for the turn-off spikes.
+
+![MOSFET drain voltage](images/drain_waveform.jpg)
 
 
 
