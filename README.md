@@ -8,8 +8,7 @@ frequencies, so the arc itself acts as a speaker.
 > Do not build or operate it without high-voltage experience. Work on it only when
 > unplugged and with the output discharged.
 
-## Demo
-[Video link / GIF of the arc playing music]
+
 
 ## Schematic
 ![Schematic](images/flyback.png)
@@ -78,7 +77,7 @@ from the primary with plenty of margin.
 
 ## Measurements
 
-All captures taken on a UNI-T UPO1202CS oscilloscope at [probe point, e.g. MOSFET gate].
+All captures taken on a UNI-T UPO1202CS oscilloscope at MOSFET gate.
 
 ### Carrier signal
 The 555 carrier running continuously at **~80 kHz**, **8.7 V peak-to-peak**,
