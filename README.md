@@ -148,7 +148,7 @@ flyback interrupter.
   heating.
 - **Tuning:** the two pots let the carrier frequency be adjusted live to find the
   flyback's sweet spot for the strongest, most stable arc.
-- **EMI:** [how you kept arc noise from upsetting the microcontroller]
+
 
 ## Future Improvements
 - Drain protection (TVS diode or RC snubber) to clamp turn-off spikes on the MOSFET
