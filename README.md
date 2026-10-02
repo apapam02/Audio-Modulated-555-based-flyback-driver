@@ -17,7 +17,7 @@ frequencies, so the arc itself acts as a speaker.
 ## How It Works
 
 1. **Supply:** a 7808 regulator derives a clean 8 V rail for the 555 and gate buffer from
-   the main [XX V] supply, which also feeds the flyback primary. Both rails are decoupled
+   the main 10-30v supply, which also feeds the flyback primary. Both rails are decoupled
    with 100 nF + 470 µF.
 
 2. **Carrier oscillator (555, astable):** generates the square wave that switches the
@@ -71,9 +71,9 @@ from the primary with plenty of margin.
 | Gate resistor | 10 Ω | Damps gate ringing |
 | MOSFET | Toshiba 2SK2611 (K2611), salvaged | 900 V / 9 A, TO-3P |
 | Decoupling | 2 × (100 nF + 470 µF) | Input and 8 V rails |
-| Flyback transformer | [source, e.g. salvaged CRT] | |
+| Flyback transformer |  salvaged from CRT TV | |
 | Microcontroller | Arduino [Uno / Nano] | Interrupter and modulator, output on pin 9 |
-| Supply | [XX V, XX A] | |
+| Supply | 10-30V | |
 
 
 ## Measurements
