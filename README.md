@@ -75,6 +75,37 @@ from the primary with plenty of margin.
 | Microcontroller | Arduino [Uno / Nano] | Interrupter and modulator, output on pin 9 |
 | Supply | [XX V, XX A] | |
 
+
+## Measurements
+
+All captures taken on a UNI-T UPO1202CS oscilloscope at [probe point, e.g. MOSFET gate].
+
+### Carrier signal
+The 555 carrier running continuously at **~80 kHz**, **8.7 V peak-to-peak**,
+**~52% duty cycle**.
+
+![Carrier at 80 kHz](images/carrier_80khz.png)
+
+### Switching edges
+Zoomed in to 2 µs/div. The rising edge is sharp, while the falling edge is slightly
+rounded as the gate charge is pulled out through the buffer.
+
+![Carrier switching edges](images/carrier_edges.png)
+
+### Modulated output
+With the Arduino driving the 555's RESET pin, the carrier is chopped into bursts.
+Each burst drives the arc once, and the burst rate sets the pitch you hear.
+Captured at 50 µs/div while playing [tone / song].
+
+![Carrier bursts modulated by the Arduino](images/modulated_bursts.png)
+
+
+
+
+
+
+
+
 ## Firmware
 
 Both sketches run on an Arduino and output on **pin 9**, which drives the 555's RESET pin.
