@@ -115,7 +115,18 @@ margin for the turn-off spikes.
 ![MOSFET drain voltage](images/drain_waveform.jpg)
 
 
+## Build
 
+The driver is built on perfboard. The 2SK2611 MOSFET is mounted on a large finned
+heatsink at the back of the board, and the 7808 regulator has its own smaller heatsink.
+The two potentiometers tune the 555 carrier frequency, screw terminals connect the
+[flyback primary / supply], and jumper wires bring in the Arduino's PWM signal.
+
+![Driver board, front view](images/board_front.jpg)
+
+Side view showing the 555 timer and the 2N3904/2N3906 gate buffer:
+
+![Driver board, side view](images/board_side.jpg)
 
 ## Firmware
 
