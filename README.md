@@ -94,7 +94,7 @@ rounded as the gate charge is pulled out through the buffer.
 ### Modulated output
 With the Arduino driving the 555's RESET pin, the carrier is chopped into bursts.
 Each burst drives the arc once, and the burst rate sets the pitch you hear.
-Captured at 50 µs/div modulated with a 1kHz pulse with a 30% duty cycle.
+Captured at 50 µs/div modulated with a 1kHz pulse with a 30% duty cycle (Yellow wave).
 
 ![Carrier bursts modulated by the Arduino](images/modulated_bursts.png)
 
