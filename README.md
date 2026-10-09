@@ -8,7 +8,10 @@ frequencies, so the arc itself acts as a speaker.
 > Do not build or operate it without high-voltage experience. Work on it only when
 > unplugged and with the output discharged.
 
-> DEMO
+DEMO
+
+
+
 ![Driver bench test](images/demo.gif)
 
 ## Schematic
