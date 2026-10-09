@@ -7,12 +7,8 @@ frequencies, so the arc itself acts as a speaker.
 > ⚠️ **High voltage warning:** This circuit produces lethal voltages at the flyback output.
 > Do not build or operate it without high-voltage experience. Work on it only when
 > unplugged and with the output discharged.
-
-ffmpeg -i VID_20260131_135344.mp4 \
-  -t 8 \
-  -vf "fps=8,scale=320:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=128[p];[s1][p]paletteuse=dither=bayer" \
-  -loop 0 \
-  images/demo.gif
+DEMO
+![Driver bench test](images/demo.gif)
 
 ## Schematic
 ![Schematic](images/flyback.png)
